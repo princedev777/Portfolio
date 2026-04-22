@@ -32,10 +32,10 @@ st.subheader("NB:Majority of these are incomplete due to constantly being busy w
 project_column,status_column = st.columns(2)
 with project_column:
   st.subheader("Project List🦺")
-  st.markdown("* [Movie Website](https://github.com/Prince-afk119/MovieWebsite)")
-  st.markdown("* [Simple QR code Generator](https://github.com/Prince-afk119/QRCodeGenerator)")
-  st.markdown("* [Screen Time Manager](https://github.com/Prince-afk119/ScreenTimeEarned)")
-  st.markdown("* [Bio Chat](https://github.com/Prince-afk119/BioChat)")
+  st.link_button(" Movie Website","https://github.com/Prince-afk119/MovieWebsite")
+  st.link_button("Simple QR code Generator","https://github.com/Prince-afk119/QRCodeGenerator")
+  st.link_button("Screen Time Manager","https://github.com/Prince-afk119/ScreenTimeEarned")
+  st.link_button("Bio Chat","https://github.com/Prince-afk119/BioChat")
   
   
 st.write("---")
@@ -44,7 +44,7 @@ col1,col2 = st.columns([0.3, 6])
 with col1:
     st.image("Images/linkedin-logo-linkedin-icon-transparent-free-png.webp", width=30)
 with col2:
-    st.markdown("[LinkedIn](https://www.linkedin.com/in/yourprofile)")
+    st.link_button("LinkedIn","https://www.linkedin.com/in/yourprofile")
 
 col1,col2 = st.columns([0.3, 6])
 with col1:
