@@ -10,7 +10,7 @@ st.write("I Am a Junior Developer trying to make a career in the tech world as b
 st.write("---")
 left_column,right_column = st.columns(2)
 with left_column:
-    st.header("Tech Skills")
+    st.header("Tech Skills👨🏾‍💻")
     st.write("* Python")
     st.write("* Java") 
     st.write("* QA and test automation in C# using dotnet framework")
@@ -18,7 +18,7 @@ with left_column:
     st.write("* HTML,CSS.Javascript")
     
 with right_column:
-    st.header("Soft Skills")
+    st.header("Soft Skills🔊")
     st.write("* Teamwork")
     st.write("* Communication Skills")
     st.write("* Adaptability")
@@ -31,12 +31,23 @@ st.subheader("NB:Majority of these are incomplete due to constantly being busy w
 
 project_column,status_column = st.columns(2)
 with project_column:
-  st.subheader("Project List")
+  st.subheader("Project List🦺")
   st.markdown("* [Movie Website](https://github.com/Prince-afk119/MovieWebsite)")
   st.markdown("* [Simple QR code Generator](https://github.com/Prince-afk119/QRCodeGenerator)")
   st.markdown("* [Screen Time Manager](https://github.com/Prince-afk119/ScreenTimeEarned)")
   st.markdown("* [Bio Chat](https://github.com/Prince-afk119/BioChat)")
   
   
+st.write("---")
+st.header("Contact Me!📞")
+col1,col2 = st.columns([0.3, 6])
+with col1:
+    st.image("Images/linkedin-logo-linkedin-icon-transparent-free-png.webp", width=30)
+with col2:
+    st.markdown("[LinkedIn](https://www.linkedin.com/in/yourprofile)")
 
-
+col1,col2 = st.columns([0.3, 6])
+with col1:
+    st.image("Images/gmail-logo-google-product-icon-logotype-gmail-editorial-vector-illustration_773275-3198.avif", width=30)
+with col2:
+    st.markdown("Princephirise@gmailcom")
