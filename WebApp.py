@@ -24,4 +24,15 @@ with right_column:
     st.write("* Adaptability")
     st.write("* Good at explaining what I understand")
     
-# Projects Section 
+st.write("---")
+st.header("Projects")
+st.subheader("NB:Majority of these are incomplete due to constantly being busy with something else but they will be finished soon")
+
+
+project_column,status_column = st.columns(2)
+with project_column:
+  st.subheader("Project List")
+  st.markdown("* [Movie Website](https://github.com/Prince-afk119/MovieWebsite)")
+  st.markdown("* [Simple QR code Generator](https://github.com/Prince-afk119/QRCodeGenerator)")
+  st.markdown("* [Screen Time Manager](https://github.com/Prince-afk119/ScreenTimeEarned)")
+  st.markdown("* [Bio Chat](https://github.com/Prince-afk119/BioChat)")
