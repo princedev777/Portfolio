@@ -36,3 +36,7 @@ with project_column:
   st.markdown("* [Simple QR code Generator](https://github.com/Prince-afk119/QRCodeGenerator)")
   st.markdown("* [Screen Time Manager](https://github.com/Prince-afk119/ScreenTimeEarned)")
   st.markdown("* [Bio Chat](https://github.com/Prince-afk119/BioChat)")
+  
+  
+
+
