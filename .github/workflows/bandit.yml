@@ -22,14 +22,14 @@ jobs:
           exit_zero: true # optional, default is DEFAULT
           # Github token of the repository (automatically created by Github)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information.
-    ruff:
-      permissions:
-          contents: read 
-          security-events: write 
-          actions: read 
+  ruff:
+    permissions:
+        contents: read 
+        security-events: write 
+        actions: read 
 
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-        - name: Ruff Check  
-          uses: chartboost/ruff-action@v1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ruff Check  
+        uses: chartboost/ruff-action@v1
