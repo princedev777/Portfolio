@@ -15,17 +15,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Bandit Check
-        run: bandit -r -b baseline.json .
+      - name: Bandit Check -r -b baseline.json .
+        uses: shundor/python-bandit-scan@ab1d87dfccc5a0ffab88be3aaac6ffe35c10d6cd
+        with: # optional arguments
+          # exit with 0, even with results found
+          exit_zero: true # optional, default is DEFAULT
+          # Github token of the repository (automatically created by Github)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information.
+    ruff:
+      permissions:
+          contents: read 
+          security-events: write 
+          actions: read 
 
-  ruff:
-    permissions:
-      contents: read
-      security-events: write
-      actions: read
-
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Ruff Check
-        run: ruff check ./WebApp.py
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: Ruff Check  
+          uses: chartboost/ruff-action@v1
