@@ -59,6 +59,6 @@ with col1:
     st.image(
         "Images/gmail-logo-google-product-icon-logotype-gmail-editorial-vector-illustration_773275-3198.avif",
         width=30,
-    )
+    ) 
 with col2:
     st.markdown("Princephirise@gmailcom")
