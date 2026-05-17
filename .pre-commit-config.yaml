@@ -3,7 +3,6 @@ repos:
     rev: 0.7.8
     hooks:
     -   id: uv-lock
-    -   id: uv-export
 
 -   repo: local
     hooks:
@@ -18,5 +17,13 @@ repos:
    -  id: bandit
       name: do a bandit check on the project files only not all
       entry: bandit -r .\WebApp.py
+      language: python
+      types: [python]
+
+-  repo: local
+   hooks:
+   -  id: mypy
+      name: run a type check on the project
+      entry: mypy .
       language: python
       types: [python]
