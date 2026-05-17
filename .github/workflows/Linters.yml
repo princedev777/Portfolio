@@ -44,4 +44,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: MyPy Check
-        uses: mathieudutour/mypy-action@v1
+        run: |
+          pip install mypy
+          mypy WebApp.py
